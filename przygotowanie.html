@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triathlon</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="jquery/jquery.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body style="height: 100vh;" class="bg-dark">
+    <div class="banner">
+        <div class="bg-primary">
+            <h1>THRIATHLON</h2>
+            <p>Trening z jQuery.</p>
+        </div>
+        
+    </div>
+
+    <nav class="navbar navbar-expand bg-dark navbar-dark">
+        <div class="container-fluid justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Triathlon</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dystanse.html">Dystanse</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="przygotowanie.html">Przygotowanie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="wyposazenie.html">Wyposażenie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="koszulka.html">Koszulka</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <p class="lead text-primary m-5">Kliknij zaliczone elementy treningu.</p>
+
+    <ul class="text-light m-5">
+        <li class="ready">Przepłynięcie 500m</li>
+        <li class="ready">Przepłynięcie 1km</li>
+        <li class="ready">Przepłynięcie 1.5km</li>
+        <li class="ready">Rower 20km</li>
+        <li class="ready">Rower 40km</li>
+        <li class="ready">Rower 50km</li>
+        <li class="ready">Bieg 5km</li>
+        <li class="ready">Bieg 10km</li>
+        <li class="ready">Bieg 15km</li>
+        <li class="ready">Siłownia</li>
+    </ul>
+
+    <div class="bg-primary text-light" style="padding: 5px 50px;">
+        <h5 style="float: left;">Procent zaliczenia treningu: <span id="procenty">0%</span></h3>
+        <a class="bg-dark text-light p-2" id="reset" style="margin-left: 50px; cursor: pointer;">Resetuj liste</a>
+    </div>
+
+
+    <footer style="position: absolute; bottom: 0; width: 100%;" class="text-center p-3 text-white">
+        © 2020 Copyright:
+        Kamil Tomiczek
+    </footer>
+</body>
+</html>

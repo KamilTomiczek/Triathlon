@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triathlon</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="jquery/jquery.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body class="bg-dark">
+    <div class="banner">
+        <div class="bg-primary">
+            <h1>THRIATHLON</h2>
+            <p>Trening z jQuery.</p>
+        </div>
+        
+    </div>
+
+    <nav class="navbar navbar-expand bg-dark navbar-dark">
+        <div class="container-fluid justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Triathlon</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dystanse.html">Dystanse</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="przygotowanie.html">Przygotowanie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="wyposazenie.html">Wyposażenie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="koszulka.html">Koszulka</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-6 text-light">
+                <h2 class="text-primary">Twoja koszulka</h2>
+                <p>Zaprojektuj swoją unikalną koszulkę</p>
+                <label for="imie">Imię:</label><br>
+                <input type="text" id="imie" placeholder="Twoje Imię"><br><br>
+
+                Kolor:<br>
+                <input type="radio" name="kolor" class="kolor" id="black" value="tshirt-black" checked>
+                <label class="text-white" for="black">Czarna</label><br>
+                <input type="radio" name="kolor" class="kolor" id="red" value="tshirt-red">
+                <label class="text-white" for="red">Czerwona</label><br>
+                <input type="radio" name="kolor" class="kolor" id="blue" value="tshirt-blue">
+                <label class="text-white" for="blue">Niebieska</label><br>
+                <input type="radio" name="kolor" class="kolor" id="pink" value="tshirt-magenta">
+                <label class="text-white" for="pink">Różowa</label><br>
+                <input type="radio" name="kolor" class="kolor" id="yellow" value="tshirt-yellow">
+                <label class="text-white" for="yellow">Żółta</label><br><br>
+
+                Logo:<br>
+                <select name="logo" id="logo">
+                    <option value="logo0">-</option>
+                    <option value="logo1">Znaki</option>
+                    <option value="logo2">Kwadraty</option>
+                    <option value="logo3">Kółka</option>
+                </select>
+            
+            </div>
+            <div style="position: relative; width: 400px; height: 400px;">
+                <img style="position: absolute;" id="tshirt" src="img/koszulka/tshirt-black.png" alt="">
+                <img style="position: absolute; top: 20px;" id="logoImg" src="img/koszulka/tshirt-logo0.png" alt="">
+                <p id="textShirt" style="position: absolute; left: 50%; transform: translate(-50%); top: 85px; font-size: 24px;" class="text-light"></p>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <footer class="text-center p-3 text-white">
+        © 2020 Copyright:
+        Kamil Tomiczek
+    </footer>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triathlon</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="jquery/jquery.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body style="height: 100vh;" class="bg-dark">
+    <div class="banner">
+        <div class="bg-primary">
+            <h1>THRIATHLON</h2>
+            <p>Trening z jQuery.</p>
+        </div>
+        
+    </div>
+
+    <nav class="navbar navbar-expand bg-dark navbar-dark">
+        <div class="container-fluid justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Triathlon</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dystanse.html">Dystanse</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="przygotowanie.html">Przygotowanie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="wyposazenie.html">Wyposażenie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="koszulka.html">Koszulka</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="distanceContainer" style="display: flex; width: 100%;">
+        <nav class="navbar navbar-expand bg-primary navbar-dark m-5" style="width: 300px;">
+            <div class="container-fluid justify-content-left">
+                <ul class="navbar-nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link distances" dName="Super Sprinterski" swim="0.6" bike="15" run="3">Super Sprinterski</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link distances" dName="Sprinterski" swim="0.75" bike="20" run="5">Sprinterski</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link distances" dName="Olimpijski" swim="1.5" bike="40" run="10">Olimpijski (Standard)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link distances" dName="Dystans Długi" swim="1.9" bike="90" run="21">Dystans Długi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link distances" dName="International Triathlon Union" swim="4" bike="130" run="30">International Triathlon Union (ITU)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link distances" dName="1/4 Ironman" swim="0.95" bike="45" run="10.55">1/4 Ironman</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link distances" dName="Half-Ironman" swim="1.9" bike="90" run="21">Half-Ironman</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link distances" dName="Ironman" swim="3.8" bike="180" run="42">Ironman</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="m-5 text-center text-light" style="width: 70%;">
+            <h3 class="text-primary" id="txt">[Wybierz dystans]</h2>
+            <h1 id="swimTxt">0.0</h1>
+            <p>Pływanie (km)</p>
+            <h1 id="bikeTxt">0.0</h1>
+            <p>Rower (km)</p>
+            <h1 id="runTxt">0.0</h1>
+            <p>Bieg (km)</p>
+
+        </div>
+    </div>
+    
+
+    <footer style="bottom: 0; position: absolute; width: 100%;" class="text-center p-3 text-white">
+        © 2020 Copyright:
+        Kamil Tomiczek
+    </footer>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triathlon</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="jquery/jquery.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body class="bg-dark">
+    <div class="banner">
+        <div class="bg-primary">
+            <h1>THRIATHLON</h2>
+            <p>Trening z jQuery.</p>
+        </div>
+        
+    </div>
+
+    <nav class="navbar navbar-expand bg-dark navbar-dark">
+        <div class="container-fluid justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Triathlon</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dystanse.html">Dystanse</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="przygotowanie.html">Przygotowanie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="wyposazenie.html">Wyposażenie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="koszulka.html">Koszulka</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid p-5 text-light">
+        <h2 class="text-primary">Czym jest triathlon?</h2>
+        <p class="lead">Triathlon (ang. triathlon), triatlon (gr. trójbój) – wszechstronna dyscyplina sportowa będąca kombinacją pływania, kolarstwa i biegania. Zawodnik kolejno płynie, jedzie na rowerze i biegnie, a czas końcowy obejmuje również zmianę stroju i sprzętu sportowego.</p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="card bg-dark">
+                    <img class="card-img-top" src="img/plywanie.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <div class="card-text">
+                            <p class="text-light">Zawodnicy pływają między oznaczonymi bojami. Niedozwolony jest wszelki sprzęt pływacki – np. płetwy, rurki do nurkowania – można korzystać jedynie z gogli pływackich. Zawodnik może w każdej chwili zatrzymać się w wodzie w pozycji stojącej (jeśli zbiornik jest na tyle płytki) bądź złapać się boi.</p>
+                            <a id="swimBtn" class="btn bg-primary">Zobacz plan treningowy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>         
+
+            <div class="col-4">
+                <div class="card bg-dark">
+                    <img class="card-img-top" src="img/kolarstwo.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <div class="card-text">
+                            <p class="text-light">Każdy zawodnik jest zobowiązany do posiadania kasku. Uczestnik zawodów może go zdjąć po zejściu z roweru np. w celu jego poprawienia. Zawodnik może prowadzić lub nieść rower (np. w przypadku awarii), jednak nie może ukończyć etapu bez niego.</p>
+                            <a id="bikeBtn" class="btn bg-primary">Zobacz plan treningowy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            
+            <div class="col-4">
+                <div class="card bg-dark">
+                    <img class="card-img-top" src="img/bieg.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <div class="card-text">
+                            <p class="text-light">Uczestnik może pokonać ostatni dystans dowolnym sposobem – biegiem zarówno do przodu, jak i do tyłu, dozwolony jest także marsz. Zawodnik nie może korzystać z pomocy z zewnątrz (oprócz wolontariuszy, którzy rozstawieni na trasie podają płyny oraz żywność).</p>
+                            <a id="runBtn" class="btn bg-primary">Zobacz plan treningowy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+
+    <div class="trainings bg-primary p-3 text-light" id="swim">
+        <h3>Pływanie</h3>
+        <p class="lead">W początkowej fazie treningu pływackiego zwracamy uwagę na jakość ruchu i jego wykonanie, a nie na prędkość. Staramy się pływać naprzemiennie wszystkimi stylami pływackimi (pływanie stylem grzbietowym, kraulem, żabką) i przepływać około 200/300 m.</p>
+    </div>
+
+    <div class="trainings bg-primary p-3 text-light" id="bike">
+        <h3>Kolarstwo</h3>
+        <p class="lead">Zawsze zaczynamy program treningowy od cyklu ogólnego. Ten cykl pozwoli później na zwiększenie intensywności i objętości w kolejnych blokach treningowych.</p>
+    </div>
+
+    <div class="trainings bg-primary p-3 text-light" id="run">
+        <h3>Bieg</h3>
+        <p class="lead">Na każdym treningu masz do wykonania sześć powtórzeń cyklu składającego się z odcinka pokonywanego biegiem i marszem. Na początku jest znacznie więcej czasu w marszu, który jednak sukcesywnie zmniejsza się kosztem powiększającego się odcinka pokonywanego biegiem. </p>
+    </div>
+
+    <p class="lead text-light p-5">
+        Triathlon to typowy sport indywidualny. Zwycięża zawodnik z najlepszym czasem. Jeśli start odbył się ze startu wspólnego jest nim zawodnik, który pierwszy dobiega do mety.
+
+        Zawodnicy nie mogą korzystać z pomocy z zewnątrz oprócz wolontariuszy zajmujących się dostarczaniem żywności na trasie. Zazwyczaj, podczas zawodów typu Ironman, zabronione są taktyki zespołowe, które np. podczas jazdy rowerem mogą doprowadzić do zmniejszenia oporu powietrza (tzw. drafting). Natomiast podczas zawodów ITU jazda w grupie jest dozwolona. Zawodnik nie może używać szklanych butelek ani sprzętu elektronicznego z wyjątkiem zegarka. Uczestnik zawodów nie może robić niczego, co stanowi zagrożenie dla siebie lub innych uczestników. W praktyce jednak każda impreza triathlonowa charakteryzuje się mniej lub bardziej zmodyfikowanymi zasadami, zawartymi w regulaminie zawodów (ze względu na trasę, ukształtowanie terenu, porę roku itp.), dlatego też trudno jest ustalić sztywne zasady dla wszystkich wydarzeń.
+
+        Większość naruszeń przepisów powoduje kosztowne kary czasowe, od jednej do 12 minut, w zależności od wagi naruszenia przepisów oraz długości wyścigu.
+
+        Ponadto triathlon posiada szereg regulacji do każdej z dyscyplin składowych.
+    </p>
+
+    <footer class="text-center p-3 text-white">
+        © 2020 Copyright:
+        Kamil Tomiczek
+    </footer>
+</body>
+</html>
